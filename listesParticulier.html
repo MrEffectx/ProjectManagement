@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Vote chez toi ! - Liste</title>
+
+    <!-- Custom fonts for this template-->
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+        <!-- Sidebar -->
+        <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+
+            <!-- Sidebar - Brand -->
+
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="indexParticulier.php">
+                <div class="sidebar-brand-icon">
+                    <img style="height: 50px;" src="img/123.png">
+                </div>
+                <div class="sidebar-brand-text mx-3">Vote chez toi !</div>
+            </a>
+            <!-- Divider -->
+            <hr class="sidebar-divider my-0">
+
+            <!-- Nav Item - Dashboard -->
+            <li class="nav-item active">
+                <a class="nav-link" href="indexParticulier.php">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Menu</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider">
+
+            <!-- Heading -->
+
+            <li class="nav-item">
+                <a class="nav-link" href="listesParticulier.php">
+                    <i class="fas fa-fw fa-table"></i>
+                    <span>Candidats</span></a>
+            </li>
+
+            <!-- Divider -->
+            <hr class="sidebar-divider d-none d-md-block">
+
+            <!-- Sidebar Toggler (Sidebar) -->
+            
+
+            <div class="text-center d-none d-md-inline">
+                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+            </div><!-- Sidebar Message -->
+            
+
+        </ul>
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+              <!-- Topbar -->
+                
+                <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
+					
+
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                    <!-- Topbar Search -->
+                    <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                        <div class="input-group">
+                            <input type="text" class="form-control bg-light border-0 small" aria-label="Search" aria-describedby="basic-addon2" placeholder="Rechercher candidat :">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="button">
+                                    <i class="fas fa-search fa-sm"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+
+                        <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+                        <li class="nav-item dropdown no-arrow d-sm-none">
+                            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-search fa-fw"></i>
+                            </a>
+                            <!-- Dropdown - Messages -->
+                            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
+                                <form class="form-inline mr-auto w-100 navbar-search">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" type="button">
+                                                <i class="fas fa-search fa-sm"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+
+                        <div class="topbar-divider d-none d-sm-block"></div>
+
+                        <!-- Nav Item - User Information -->
+                        <li class="nav-item dropdown no-arrow show">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                <span class="mr-2 d-none d-lg-inline text-gray-600 small">Mr Mdme X</span>
+                                <img class="img-profile rounded-circle" src="img/undraw_profile.svg">
+                            </a>
+                            <!-- Dropdown - User Information -->
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in show" aria-labelledby="userDropdown">
+	                        <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>Déconnexion</a>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- End of Topbar -->
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid">
+                
+                <div class="row">
+
+                        <div class="col-lg-6 mb-4">
+
+                            <!-- Illustrations -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">François Macron</h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="text-center">
+                                        <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 430px; height: 325px;" src="img/candidat1.jpg" alt="...">
+                                    </div>
+                                    <p><i> Votez pour moi je vous le rendrai !</i><p>
+                                    <p>Nous exigerons que soit intégré dans tous les accords commerciaux de l’UE un volet de 
+                                    coopération fiscale ainsi que des clauses sociales et environnementales contraignantes 
+                                    (en abaissant en priorité les tarifs douaniers sur les biens et services « propres » et en 
+                                    instituant des sanctions commerciales en cas de violation des clauses 
+                                    sociales et environnementales). <a target="_blank" rel="nofollow" href="listes.html">Plus d'info.</a></p>
+                                    
+                                     <div  aria-labelledby="userDropdown">
+	                        			<a class="dropdown-item" href="#" data-toggle="modal" data-target="#voteModal">
+                                    	<i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>Voter</a>
+                            		</div>
+                                </div>
+                            </div>
+                   		</div>
+                   		
+                   		<div class="col-lg-6 mb-4">
+
+                            <!-- Illustrations -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Patrick Bosnin</h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="text-center">
+                                        <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 430px; height: 325px;" src="img/candidat2.jpg" alt="...">
+                                    </div>
+                                    <p><i> Ma vie mon combat !</i><p>
+                                    <p>	Restaurer l’universalité des allocations familiales et du complément mode de garde pour les familles.
+										Accroître la part de la protection sociale financée par l’impôt pour répondre à l’universalisation de nombreuses prestations sociales et renforcer l’acceptabilité de la Sécurité sociale.
+										Doubler les crédits d'impôt pour les familles pour favoriser la conciliation ...
+ <a target="_blank" rel="nofollow" href="listes.html">Plus d'info.</a></p>
+                                    
+                                     <div  aria-labelledby="userDropdown">
+	                        			<a class="dropdown-item" href="#" data-toggle="modal" data-target="#voteModal">
+                                    	<i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>Voter</a>
+                            		</div>
+                                </div>
+                            </div>
+                   		</div>
+                   		
+                   		<div class="col-lg-6 mb-4">
+
+                            <!-- Illustrations -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Alice Duprés</h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="text-center">
+                                        <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 430px; height: 325px;" src="img/candidat8.jpg" alt="...">
+                                    </div>
+                                    <p><i> La diversification c'est la vie !</i><p>
+                                    <p>Diversifier le recrutement et encourager les deuxièmes carrières dans l’enseignement en créant des contrats d’émission éducative de 5 ans, qui mettront fin à la précarité des enseignants vacataires (qui représentent aujourd’hui jusqu’à 10 ou 15 % des effectifs dans certaines académies). Et régionaliser le recrutement des enseignants au niveau du CAPES et la gestion de ... <a target="_blank" rel="nofollow" href="listes.html">Plus d'info.</a></p>
+                                    
+                                     <div  aria-labelledby="userDropdown">
+	                        			<a class="dropdown-item" href="#" data-toggle="modal" data-target="#voteModal">
+                                    	<i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>Voter</a>
+                            		</div>
+                                </div>
+                            </div>
+                   		</div>
+                   		
+                   		<div class="col-lg-6 mb-4">
+
+                            <!-- Illustrations -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Hugo-Pascal François</h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="text-center">
+                                        <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 430px; height: 325px;" src="img/candidat31.jpg" alt="...">
+                                    </div>
+                                    <p><i> J'aime être en famille !</i><p>
+                                    <p>	Améliorer les revenus des agriculteurs en rééquilibrant la relation avec la grande distribution et les centrales d’achat et en sanctionnant les pratiques abusives. Pas de baisse du budget de la PAC et exiger la renégociation du plan « Farm to Fork » européen, déclinaison agricole du pacte vert européen et qui conduit à un effondrement de notre production et à l’augmentation ...
+                                     <a target="_blank" rel="nofollow" href="listes.html">Plus d'info.</a></p>
+                                    
+                                     <div  aria-labelledby="userDropdown">
+	                        			<a class="dropdown-item" href="#" data-toggle="modal" data-target="#voteModal">
+                                    	<i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>Voter</a>
+                            		</div>
+                                </div>
+                            </div>
+                   		</div>
+                   		
+                   		<div class="col-lg-6 mb-4">
+
+                            <!-- Illustrations -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">René Duchantier</h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="text-center">
+                                        <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 430px; height: 325px;" src="img/candidat4.jpg" alt="...">
+                                    </div>
+                                    <p><i> La loi c'est moi !</i><p>
+                                    <p>	Convoquer un référendum (article 11) pour engager le processus constituant (modalités de composition de l’Assemblée constituante – modes de scrutin, parité, tirage au sort et incompatibilités ; modalités de la délibération ; comités constituants et participation citoyenne). Aucun parlementaire des anciennes assemblées ne pourra siéger dans cette Assemblée ...
+                                     <a target="_blank" rel="nofollow" href="listes.html">Plus d'info.</a></p>
+                                    
+                                     <div  aria-labelledby="userDropdown">
+	                        			<a class="dropdown-item" href="#" data-toggle="modal" data-target="#voteModal">
+                                    	<i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>Voter</a>
+                            		</div>
+                                </div>
+                            </div>
+                   		</div>
+                   		
+                   		<div class="col-lg-6 mb-4">
+
+                            <!-- Illustrations -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Inès Igor</h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="text-center">
+                                        <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 430px; height: 325px;" src="img/candidat5.jpg" alt="...">
+                                    </div>
+                                    <p><i> Les taxes c'est pas génial !</i><p>
+                                    <p>	Baisser les taxes sur les carburants (TVA à 5,5%). La fiscalité environnementale sera dotée d’une Règle d’Or Climatique pour assurer la transparence et la pertinence des usages : 50 % pour des dépenses accélérant la transition écologique et 50 % pour des mesures sociales en faveur des ménages particulièrement impactés par la transformation de nos modes de vie ou déjà en ...
+                                     <a target="_blank" rel="nofollow" href="listes.html">Plus d'info.</a></p>
+                                    
+                                     <div  aria-labelledby="userDropdown">
+	                        			<a class="dropdown-item" href="#" data-toggle="modal" data-target="#voteModal">
+                                    	<i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>Voter</a>
+                            		</div>
+                                </div>
+                            </div>
+                   		</div>
+                   		
+                   		<div class="col-lg-6 mb-4">
+
+                            <!-- Illustrations -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Maelis N'Guyen</h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="text-center">
+                                        <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 430px; height: 325px;" src="img/candidat6.jpg" alt="...">
+                                    </div>
+                                    <p><i> Les jeunes sont gentils !</i><p>
+                                    <p>	Conférer aux aidants familiaux s’occupant d’enfants handicapés ou d’aînés dépendants un véritable statut en termes d’indemnisation et d’aménagements de leur vie professionnelle. Créer une allocation du premier enfant de 900 € par an, versée à tous les parents qui auront un enfant jusqu’à ses 18 ans, et qui s’ajoutera à la prime pour l’accueil du jeune enfant (la Paje). 
+                                     <a target="_blank" rel="nofollow" href="listes.html">Plus d'info.</a></p>
+                                    
+                                     <div  aria-labelledby="userDropdown">
+	                        			<a class="dropdown-item" href="#" data-toggle="modal" data-target="#voteModal">
+                                    	<i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>Voter</a>
+                            		</div>
+                                </div>
+                            </div>
+                   		</div>
+                   		
+                   		<div class="col-lg-6 mb-4">
+
+                            <!-- Illustrations -->
+                            <div class="card shadow mb-4">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary">Alexis Dimitrov</h6>
+                                </div>
+                                <div class="card-body">
+                                    <div class="text-center">
+                                        <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 430px; height: 325px;" src="img/candidat71.jpg" alt="...">
+                                    </div>
+                                    <p><i> L'avenir c'est bien !</i><p>
+                                    <p>	Cesser la radiation des chômeurs à la première absence à un 
+                                    	rendez-vous et en finir avec la logique de radiation.
+										Rétablir un régime d'assurance-chômage spécifique pour les intermittents 
+										de l'emploi et les intérimaires.
+                                        <br>
+                                        <br>
+                                        <br>
+                                     <a target="_blank" rel="nofollow" href="listes.html">Plus d'info.</a></p>
+                                    
+                                     <div  aria-labelledby="userDropdown">
+	                        			<a class="dropdown-item" href="#" data-toggle="modal" data-target="#voteModal">
+                                    	<i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>Voter</a>
+                            		</div>
+                                </div>
+                            </div>
+                   		</div>
+                    </div>
+
+                </div>
+                <!-- /.container-fluid -->
+
+            </div>
+            <!-- End of Main Content -->
+
+            <!-- Footer -->
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright © Vote chez toi ! 2021</span>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of  Footer -->
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top" style="display: none;">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+	<!-- Vote Modal-->
+	    <div class="modal fade" id="voteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	        <div class="modal-dialog" role="document">
+	            <div class="modal-content">
+	                <div class="modal-header">
+	                    <h5 class="modal-title" id="exampleModalLabel"> Voter pour ce candidat</h5>
+	                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+	                        <span aria-hidden="true">×</span>
+	                    </button>
+	                </div>
+	                <div class="modal-body">Etes vous certain de vouloir voter pour [candidat-name] ?</div>
+	                <div class="modal-footer">
+	                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Annuler</button>
+	                    <a class="btn btn-primary" href="listesParticulier.html">Voter</a>
+	                </div>
+	            </div>
+	       	</div>
+	    </div>
+    
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Déconnexion ?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Quitter fermera votre session actuelle et vous renverra vers la page de connexion.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Annuler</button>
+                    <a class="btn btn-primary" href="firstSelect.html">Quitter</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="js/sb-admin-2.min.js"></script>
+
+    <!-- Page level plugins -->
+    <script src="vendor/chart.js/Chart.min.js"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="js/demo/chart-area-demo.js"></script>
+    <script src="js/demo/chart-pie-demo.js"></script>
+
+</body>
+
+</html>
