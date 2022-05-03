@@ -33,7 +33,7 @@
                     <div class="col-lg-7">
                         <div class="p-5">
                             <div class="text-center">
-                                <h1 class="h4 text-gray-900 mb-4">Cr√©er votre compte !</h1>
+                                <h1 class="h4 text-gray-900 mb-4">CrÈer votre compte !</h1>
                             </div>
                             <form method="post" class="user">
                                 <div class="form-group row">
@@ -81,7 +81,7 @@
                                 
                             </div>
                             <div class="text-center">
-                                <a class="small" href="firstSelect.html">Vous avez d√©j√† un compte ?</a>
+                                <a class="small" href="login.php">Vous avez dÈj‡ un compte ?</a>
                             </div>
                         </div>
                     </div>

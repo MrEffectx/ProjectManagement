@@ -9,7 +9,6 @@
     }
  if(isset($_POST['login']))
  {
-
     $email= $_POST['email'];
     $mdp= $_POST['mdp'];
 
@@ -22,7 +21,7 @@
 
     if ($row_cnt == 1)
     {
-    header("Location: indexParticulier.php?login=".$_SESSION['electeur']);
+    header("Location: index.html?login=".$_SESSION['electeur']);
     } 
     else 
     {

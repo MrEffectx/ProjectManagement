@@ -171,26 +171,50 @@
                         <div class="row">
                                 <div class="p-5">
                                     <div class="text-center">
-                                        <h1 class="h4 text-gray-900 mb-4">Vérification du statut du votant</h1>
+                                        <h1 class="h4 text-gray-900 mb-4">Ajout matériel</h1>
                                     </div>
                                     <form class="user">
-
+										
+										<div class="form-group">
+                                            <input type="barCode" class="form-control form-control-user"
+                                                id=""barCode"" aria-describedby=""barCode""
+                                                placeholder="Code barre">
+                                        </div>
+                                        
                                         <div class="form-group">
                                             <input type="name" class="form-control form-control-user"
-                                                id="exampleInputEmail" aria-describedby="nom"
-                                                placeholder="Nom du votant">
+                                                id="name" aria-describedby="name"
+                                                placeholder="Nom matériel">
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <input type="desc" class="form-control form-control-user"
+                                                id="description" aria-describedby="description"
+                                                placeholder="Description">
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <input type="achatDate" class="form-control form-control-user"
+                                                id="achatDate" aria-describedby="achatDate"
+                                                placeholder="Date d'achat">
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <input type="prixAchat" class="form-control form-control-user"
+                                                id="prixAchat" aria-describedby="prixAchat"
+                                                placeholder="Prix d'achat">
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <input type="fourisseur" class="form-control form-control-user"
+                                                id="fourisseur" aria-describedby="fourisseur"
+                                                placeholder="Fourisseur">
                                         </div>
                                         
                                          <div class="form-group">
-                                            <input type="name" class="form-control form-control-user"
-                                                id="exampleInputEmail" aria-describedby="prenom"
-                                                placeholder="Prenom du votant">
-                                        </div>
-                                        
-                                         <div class="form-group">
-                                            <input type="string" class="form-control form-control-user"
-                                                id="exampleInputEmail" aria-describedby="ID Card"
-                                                placeholder="Carte Identité">
+                                            <input type="count" class="form-control form-control-user"
+                                                id="count" aria-describedby="count"
+                                                placeholder="Nombre d'exemplaire">
                                         </div>
 
                                         <a class="btn btn-primary btn-user btn-block">
@@ -204,19 +228,6 @@
 
                                 </div>
                             </div>
-                             <div class="">
-								<div class="text-center">
-                    				<h1 class="h4 text-gray-900 mb-4">Peut voter</h1>
-               				 	</div>
-                    			<div class="text-center">
-                    				<h1 class="h4 text-gray-900 mb-4">Ne peut pas voter</h1>
-                    			</div>
-                			</div>
-                			<div class="">
-								<a class="btn btn-primary btn-user btn-block">
-                      				A voté
-                   				</a>
-                			</div>
                         </div>
                     </div>
                     

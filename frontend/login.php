@@ -60,6 +60,9 @@
                                                 <label class="custom-control-label" for="customCheck">Se souvenir de moi</label>
                                             </div>
                                         </div>
+                                        <div class="text-center">
+                                        <a class="small" href="index.html">Index</a>
+                                    	</div>
                                         <button type="submit" class="btn btn-primary btn-user btn-block" name="login">
                                             Connexion
                                         </button>
